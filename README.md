@@ -80,9 +80,9 @@
   - 어떠한 행렬 A가 가역적(invertible)이면 그 해는 항상 자명하다(uniquely obtained). - 즉, 해가 오직 하나이다.
   - 비가역적(non-invertible)인 행렬이라면, 해가 무수히 많거나(infinitely many solutions) 해가 없다(no solution).
     - 해가 무수히 많은 경우(under-determined system): 계수들의 비율이 같은데, 상수값도 같아 0x + 0y = 0과 같이 나오는 경우
-      - 머신러닝을 예로 들면, data(방정식)보다 feature(미지수)가 더 많은 경우
+      - 머신러닝을 예로 들면, data(방정식)보다 feature(미지수)가 더 많은 경우 - 방정식이 미지수보다 적은 경우
     - 해가 없는 경우(over-determined system): 계수들의 비율이 같은데 상수값이 달라 0x + 0y = 2와 같이 나오는 경우
-      - 머신러닝을 예로 들면, feature(미지수)보다 data(방정식)이 더 많은 경우
+      - 머신러닝을 예로 들면, feature(미지수)보다 data(방정식)이 더 많은 경우 - 방정식이 미지수보다 많은 경우
   - 추가 학습자료
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/
