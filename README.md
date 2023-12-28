@@ -86,3 +86,10 @@
   - 추가 학습자료
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/
+
+## Theories
+- 정리1. 직사각행렬을 축소된 행사다리꼴 행렬로 만들면 단 하나의 기약 행사다리꼴 행렬만 갖는데, 즉, 다른 기약 행사다리꼴은 존재하지 않는다.(Lay p.13)
+
+---
+### References
+1) https://m.blog.naver.com/kiseop91
