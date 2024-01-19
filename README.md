@@ -13,8 +13,8 @@
 # Contents
 - Elements in linear algebra - finished
 - Linear system - in progress
-- Linear combination, vector equation, Four views of matrix multiplication
-- Linear independence, span, and subspace
+- Linear combination, vector equation, Four views of matrix multiplication - in progress
+- Linear independence, span, and subspace - in progress
 - Linear transformation
 - Least squres
 - Eigendecomposition
@@ -155,12 +155,12 @@
       - t = t⊥r + t||r
       - ∴ t⊥r = t - t||r
 
-
 - 기타 법칙
   - A(B + C) = AB + AC: 분배법칙이 성립한다(distributive).
   - A(BC) = (AB)C: 결합법칙이 성립한다(associative).
   - (AB)ᵀ = BᵀAᵀ: AB를 전치(transpose)하면 A와 B의 순서가 바뀐다.
   - (AB)^-1 = B^-1A^-1: 전치와 마찬가지로 AB의 역행렬은 순서가 바뀐다.
+ 
 ### 2. Linear System(선형방정식)
 - 선형 방정식(lienar equation): x1, x2, ..., xn의 미지수가 있을 때 미지수를 풀기 위한 방정식으로 a1x1 + a2x2 + ... + anxn = b 와 같이 표기한다.
   - 위 방정식의 표기법을 선형대수에서는 aᵀx = b로 간결하게 표기한다.
@@ -202,12 +202,67 @@
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/
     - https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/
 
+### 3. Linear combination, vector equation, Four views of matrix multiplication(선형 결합, 벡터 방정식, 행렬 곱셈을 바라보는 4가지 관점)
+- 벡터 집합(vector space): 벡터들의 모음.(유한하거나 무한한 수의 벡터가 존재) denoted by V = { v1, ..., vn }
+- 선형 결합(linear combination): 여러 변수마다 가중치를 다르게 주어 정보를 혼합하는 방법
+  - w = λ1v1 + λ2v2 + ... + λnvn (즉, 스칼라와 벡터를 곱한 후 값들을 합하는 것을 선형 결합이라고 함)
+  - 선형 종속적(linearly dependent): 벡터 집합 V에서 적어도 하나의 벡터를 집합의 다른 벡터들의 선형 결합으로 나타낼 수 있을 때 벡터 집합을 선형 종속적(linearly dependent)이라고 함
+  - <img width="400" alt="스크린샷 2024-01-19 오후 2 03 25" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/b8f9fd41-c621-4020-a1f7-405fc86e8043">
+    
+  - 선형 결합 응용 분야
+    1. 통계 모델로부터 예측된 데이터는 최소제곱 알고리즘을 통해 계산되는 회귀변수(독립변수)와 계수(스칼라)의 선형 결합으로 생성됨
+    2. 차원 축소 과정(e.g., 주성분 분석)에서 각 성분(인자 또는 모드)은 성분의 분산을 최대화하는 가중치(계수)와 데이터 채널의 선형 결합으로 도출됨
+    3. 인공 신경망(ANN)에는 입력 데이터의 선형 결합과 비선형 변환의 2가지 연산이 있음. 가중치(w)는 비용 함수(loss function)을 최소화하도록 학습됨
+       - 비용 함수(loss function): 모델 예측과 실제 목표 변수 사이의 차이
+- 벡터 방정식
+- 행렬 곱셈을 바라보는 4가지 관점
+    
+### 4. Linear independence, span, and subspace(선형 독립성, 생성, 부분공간)
+- 선형 독립적(linearly independent): 집합에 있는 벡터들의 선형 결합으로 집합의 아무런 벡터도 나타낼 수 없을 때 벡터 집합을 '선형 독립적(linearly independent)'이라고 함 ↔ 선형 종속적(linearly dependent)
+  - <img width="400" alt="스크린샷 2024-01-19 오후 2 22 18" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/e2b392a8-2c47-456f-b772-b43c89c3e636">
+
+  - 위의 경우는 집합 내의 벡터의 수가 적어서 선형 배수로 나타낼 수 있는지 없는지를 눈으로만 계산하여도 쉽게 선형 종속적인지 선형 독립적인지 판단할 수 있음. 하지만 아래와 같이 훨씬 복잡한 벡터 집합이라면?
+    - <img width="400" alt="스크린샷 2024-01-19 오후 2 24 42" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/047480f0-9cbb-4b7b-91f4-b27ad514e704">
+     
+      - 선형 독립성을 결정하는 방법은 벡터 집합으로 행렬을 만들고 행렬의 계수를 계산한 다음 행의 수와 열의 수 중에서 더 작은 값과 비교하면 됨. 이는 차후에 학습하고 정리할 예정
+  - 수학에서의 선형 독립성: 벡터를 선형적으로 결합해서 영벡터를 생성할 수 있는 방법이 없다면 벡터 집합은 선형 독립적
+    - 선형 종속의 수학적 정의
+      - 0 = λ1v1 + λ2v2 + ... + λnvn, λ ∈ R, λ1 ≠ 0  
+      - λ1 ≠ 0이며 자명하지 않은 해(nontrivial solution)가 존재. 즉, 벡터 집합이 선형 종속적이라면 선형 결합으로 영벡터를 만들 수 있다는 뜻.
+- 부분공간(subspace): (유한한) 벡터 집합의 벡터들을 사용하여 수많은 다른 가중치를 사용해 무한히 선형 결합하여 만든 공간(벡터 집합으로 생성된 결과)
+  - 벡터 집합에서 생성되는 부분공간의 차원은 선형 독립 집합을 형성하는 데 필요한 최소한의 벡터 수
+  - 벡터 집합이 선형 독립적일 때: 부분 공간의 차원 = 집합의 벡터수
+  - 벡터 집합이 선형 종속적일 때: 부분 공간의 차원 < 집합의 벡터수
+- 생성(span): 가능한 모든 선형 결합을 구성하는 메커니즘
+- 기저(basis): 행렬의 정보(e.g., 데이터)를 설명하는 데 사용하는 기준의 집합. 즉, 벡터 공간을 생성하는데 필요한 최소한의 벡터들을 나타냄(마인크래프트에서 건물을 지을 때 사용되는 블록들과도 같음)
+  - 기저는 데이터 과학과 머신러닝에서 매우 중요(모든 분석은 본질적으로 특정 문제에 대한 최적의 기저벡터를 찾는 것이 목적이기 때문에)
+  - 가장 일반적인 기저 집합: 데카르트 좌표계(Cartesian Coordinate System)
+  - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/5fcd438c-2c82-42aa-bbef-f7a58953c977)
+
+  - <img width="350" alt="스크린샷 2024-01-19 오후 2 49 49" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/6513f825-cbf0-4ed4-96ed-a52f0eb3e277">
+
+    - 위는 2차원과 3차원 데카르트 그래프의 기저 집합으로 '표준 기저 집합'이라고 함(데카트르 기저 집합은 서로 직교하며 단위 길이인 벡터로 이루어져 있음)
+    - <img width="298" alt="스크린샷 2024-01-19 오후 2 52 20" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/13cf88d0-ae8d-4d6d-a8cf-c89e8fd30bd6">
+ 
+      - 표준 기저 집합이 유일한 기저 집합은 아님. 위의 T는 R2의 또 다른 기저 집합임
+    
+    - ![이코테 - 0 5](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/a1ac1200-2d7b-49b4-ae2f-7158b2de5cf9)      
+
+      - 위 예제에서 S와 T는 모두 동일한 부분공간을 생성함. 하지만 S보다는 T를 더 선호함.(간결하고 직관적이기 때문)
+  - 기저의 정의
+    - 생성(span)과 독립성(independency)를 결합한 것(벡터 집합이 특정 부분공간을 생성하고 독립적인 벡터 집합이라면 해당 부분공간의 기저임)
+ 
 ## Summarization
 - 벡터는 열 또는 행에 숫자를 나열한 것으로 순서가 중요. 벡터의 원소 수는 차원이라고 함. 벡터는 차원과 동일한 수의 축을 가진 기하학적 공간에서 하나의 선으로 나타낼 수 있음.
-- 덧셈, 뺄셈, 아다마르곱과 같은 벡터 산술 연산은 원소별로 계산.
-- 내적은 차원이 같은 두 벡터 간의 관계를 인코딩한 단일 숫자로, 원소별로 곱하고 합해서 구함(내적은 매우 중요. 내적은 유사도와 관련이 있음)
-- 두 벡터가 직교하면 내적은 0이며 기하학적으로 벡터가 직각으로 만나는 것을 의미(분해에 활용)
-- 직교벡터 분해는 하나의 벡터를 기준벡터와 직교하는 벡터, 평행한 벡터로 나누는 것(공식은 기하학적으로 도출 가능하나, 공식이 내포한 개념인 '크기에 대한 매핑'을 기억해야 함)
+- 덧셈, 뺄셈, 아다마르곱과 같은 벡터 산술 연산은 원소별로 계산함.
+- 내적은 차원이 같은 두 벡터 간의 관계를 인코딩한 단일 숫자로, 원소별로 곱하고 합해서 구함(내적은 매우 중요. 내적은 유사도와 관련이 있음).
+- 두 벡터가 직교하면 내적은 0이며 기하학적으로 벡터가 직각으로 만나는 것을 의미함(분해에 활용).
+- 직교벡터 분해는 하나의 벡터를 기준벡터와 직교하는 벡터, 평행한 벡터로 나누는 것임(공식은 기하학적으로 도출 가능하나, 공식이 내포한 개념인 '크기에 대한 매핑'을 기억해야 함).
+- 벡터 집합은 벡터들의 모음이며, 벡터 집합에는 유한하거나 무한한 수의 벡터가 존재함.
+- 선형 결합은 집합의 벡터들에 스칼라를 곱하고 합하는 것으로 선형대수학에서 가장 주요한 개념임.
+- 집합에서 하나의 벡터가 집합의 다른 벡터들의 선형 결합으로 기술될 수 있으면 해당 벡터 집합은 선형 종속적임. 만약 이러한 선형 결합이 없다면 벡터 집합은 선형 독립적임.
+- 부분공간은 벡터 집합의 가능한 모든 선형 결합으로 만들어진 무한 집합임.
+- 기저는 공간을 측정하기 위한 일종의 자와 같은 개념임. 벡터 집합이 (1) 어떤 부분공간을 생성하고 (2) 선형 독립적이라면 해당 부분 공간에 대한 기저가 됨. 데이터 과학의 주요 목표는 데이터 집합을 설명하거나 문제를 해결하기 위한 최상의 기저 집합을 찾는 것임.
 
 ## Theories
 - 정리1. 직사각행렬을 축소된 행사다리꼴 행렬로 만들면 단 하나의 기약 행사다리꼴 행렬만 갖는데, 즉, 다른 기약 행사다리꼴은 존재하지 않는다.(Lay p.13)
