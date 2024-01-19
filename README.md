@@ -11,10 +11,10 @@
 - Current modified: 01/16/2024 Tue.
 
 # Contents
-- Elements in linear algebra - completed
+- Elements in linear algebra - completed
 - Linear system - in progress
 - Linear combination, vector equation, Four views of matrix multiplication - in progress
-- Linear independence, span, and subspace - completed
+- Linear independence, span, and subspace - completed
 - Linear transformation
 - Least squres
 - Eigendecomposition
@@ -224,7 +224,7 @@
   - 위의 경우는 집합 내의 벡터의 수가 적어서 선형 배수로 나타낼 수 있는지 없는지를 눈으로만 계산하여도 쉽게 선형 종속적인지 선형 독립적인지 판단할 수 있음. 하지만 아래와 같이 훨씬 복잡한 벡터 집합이라면?
     - <img width="400" alt="스크린샷 2024-01-19 오후 2 24 42" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/047480f0-9cbb-4b7b-91f4-b27ad514e704">
      
-      - 선형 독립성을 결정하는 방법은 벡터 집합으로 행렬을 만들고 행렬의 계수를 계산한 다음 행의 수와 열의 수 중에서 더 작은 값과 비교하면 됨. 이는 차후에 학습하고 정리할 예정
+      - 선형 독립성을 결정하는 방법은 벡터 집합으로 행렬을 만들고 행렬의 계수(rank)를 계산한 다음 행의 수와 열의 수 중에서 더 작은 값과 비교하면 됨. 이는 차후에 학습하고 정리할 예정
   - 수학에서의 선형 독립성: 벡터를 선형적으로 결합해서 영벡터를 생성할 수 있는 방법이 없다면 벡터 집합은 선형 독립적
     - 선형 종속의 수학적 정의
       - 0 = λ1v1 + λ2v2 + ... + λnvn, λ ∈ R, λ1 ≠ 0  
