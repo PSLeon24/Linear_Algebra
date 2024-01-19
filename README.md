@@ -11,10 +11,10 @@
 - Current modified: 01/16/2024 Tue.
 
 # Contents
-- Elements in linear algebra - finished
+- Elements in linear algebra - completed
 - Linear system - in progress
 - Linear combination, vector equation, Four views of matrix multiplication - in progress
-- Linear independence, span, and subspace - in progress
+- Linear independence, span, and subspace - completed
 - Linear transformation
 - Least squres
 - Eigendecomposition
