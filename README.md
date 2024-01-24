@@ -1,10 +1,10 @@
 # Linear_Algebra
 - This repository is written and practiced while studying linear algebra.
 - Learning resource
-  - Lecture Video
+  - Lecture Videos
     - 인공지능을 위한 선형대수, 고려대학교 주재걸 교수님 - https://www.boostcourse.org/ai251
     - 선형대수학1, 세종대학교 하길찬 교수님 - http://www.kocw.net/home/cview.do?cid=f41a378321625410
-  - Book
+  - Books
     - Lay et al. Linear Algebra and Its Applications, 5th edition, 2015
     - HOWARD ANITON. 알기 쉬운 선형대수 제 12판(한티에듀)
     - Mike X Cohen. 개발자를 위한 실전 선형대수학
