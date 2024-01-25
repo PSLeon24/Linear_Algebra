@@ -8,7 +8,7 @@
     - Lay et al. Linear Algebra and Its Applications, 5th edition, 2015
     - HOWARD ANITON. 알기 쉬운 선형대수 제 12판(한티에듀)
     - Mike X Cohen. 개발자를 위한 실전 선형대수학
-- Current modified: 01/24/2024 Wed.
+- Current modified: 01/25/2024 Thu.
 
 # Contents
 - Elements in linear algebra - completed
