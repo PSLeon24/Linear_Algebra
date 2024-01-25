@@ -57,7 +57,11 @@
       - LIVE EVIL(연산 순서)
         - (LIVE) = EᵀVᵀIᵀLᵀ
           - 여러 행렬의 곱셈을 전치할 때의 순서, 위와 같이 4개뿐만 아니라 더 많은 수의 행렬에도 동일하게 위의 규칙이 적용됨
+    - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/6317db12-c84a-4248-90c2-2bdedd1b0114)
+    - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/c2fe1483-0fd9-4a2a-aee0-284bef4708b2)
+    - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/73e3d9fe-d621-4100-b70a-7bcf90286be8)
     - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/b700aba3-f69a-413c-9c88-6f082651a628)
+    - ![image](https://github.com/PSLeon24/Linear_Algebra/assets/59058869/ba160091-85be-4d41-a7ab-e42ff2d119af)
 
   - Aij: i번째 행, j번째 열의 요소
   - Ai,: - i번째 행벡터
