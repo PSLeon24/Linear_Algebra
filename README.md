@@ -218,7 +218,7 @@
   - 벡터 또는 행렬을 '분해'하면 여러 간단한 조각으로 나뉘어짐
     - 숨겨진 정보를 밝혀내거나 행렬을 사용하기 쉬운 형태로 만들거나 데이터를 압축하기 위해 사용
     - 그람-슈미트 과정(Gram-Schmidt Process), QR 분해와 직접적인 연관이 있음
-  - 직교 투영법(orthogonal projection) = 최소 거리 투영 ~ 벡터 분해를 배우기 위해 꼭 필요한 기초 내용
+  - 정사영(직교 투영법, orthogonal projection) = 최소 거리 투영 ~ 벡터 분해를 배우기 위해 꼭 필요한 기초 내용
     <img height="300px" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/2fa44aca-f961-4cbe-9918-43919bae5d3a">
   
     - 표준 위치에 두 벡터 a, b가 있을 때, a에서 b의 머리와 최대한 가까운 점을 찾아야 함
