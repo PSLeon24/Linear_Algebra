@@ -1,5 +1,7 @@
 # Linear_Algebra
 - This repository is written and practiced while studying linear algebra.
+- What is Linearity
+  - <img width="247" alt="스크린샷 2024-05-20 오후 1 43 52" src="https://github.com/PSLeon24/Linear_Algebra/assets/59058869/03e532b7-3414-4499-93e9-be56bd88f22b">
 - Learning resource
   - Lectures
     - 인공지능을 위한 선형대수, 고려대학교 주재걸 교수님 - https://www.boostcourse.org/ai251
