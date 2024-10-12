@@ -18,8 +18,8 @@
 - Linear combination, vector equation, Four views of matrix multiplication - in progress
 - Linear independence, span, and subspace - completed
 - Linear transformation
-- Least squres
-- Eigendecomposition
+- Least squres solution
+- Eigen decomposition
 - Singular value decomposition
 
 ## Learning Notes
